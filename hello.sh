@@ -1,15 +1,9 @@
 #!/bin/sh
 
-
-
-
 TEXT="Hello world"
 echo $TEXT
 
 TIME=`date`
-
-
-
 WHERE=$(pwd)
 
 echo $TIME
