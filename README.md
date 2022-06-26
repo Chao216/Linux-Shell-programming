@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-### + [Chapter 1 Variable](#variable)
+### 1. [Chapter 1 Variable](#variable)
 
 
 
