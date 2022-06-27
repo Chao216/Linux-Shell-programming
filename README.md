@@ -49,7 +49,7 @@ such as `command arg1 arg2`
 `$!` the PID of last background process
 `$?` the result of last bg process, if return 0, it means normal, not 0, something wrong.
 
-### 1.4 Operator in Shell
+### 1.4 expression in Shell
 
 to declare an expression, there are three ways
 
@@ -73,4 +73,24 @@ C=`$(($A+$B))`
 echo $C
 ```
 
+### 1.5 comparison operator
 
+`-eq` =
+`-ne` !=
+`-gt` >
+`-ge` >=
+`-lt` <
+`-le` <=
+
+
+## 2. Conditions
+
+```shell
+if [ condition ]
+then command
+elif [ condition ]
+then command
+else
+command
+fi
+``` 
