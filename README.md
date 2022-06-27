@@ -25,4 +25,21 @@ if you want  a variable to be accessible globally in the mcahine, export it as a
 ```shell
 export VARIABLE_NAME=value
 ```
+### 1.2 positional parameter
+
+positional paramters are arguments that follows the command/shell
+
+such as `command arg1 arg2`
+
+`$0` refers to the command itsel
+
+`$1` refers to the first arg
+
+`$2` refers to the second arg
+
+`$*` refers to all positional parameters
+
+`$@ ` refers to all positional params
+
+`$#` refers to number of args
 
