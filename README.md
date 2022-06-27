@@ -43,3 +43,8 @@ such as `command arg1 arg2`
 
 `$#` refers to number of args
 
+### 1.3 internal variables
+
+`$$` the PID of current process
+`$!` the PID of last background process
+`$?` the result of last bg process, if return 0, it means normal, not 0, something wrong.
