@@ -48,3 +48,29 @@ such as `command arg1 arg2`
 `$$` the PID of current process
 `$!` the PID of last background process
 `$?` the result of last bg process, if return 0, it means normal, not 0, something wrong.
+
+### 1.4 Operator in Shell
+
+to declare an expression, there are three ways
+
+```shell
+
+$((expression))
+
+$[expression]
+
+expr num1 + num2
+
+```
+
+if you want to assign an expression to  a variable, use \`\` 
+
+```shell
+A=3
+B=6
+C=`$(($A+$B))`
+
+echo $C
+```
+
+
