@@ -1,12 +1,6 @@
 # Linux-Shell-programming
 
-## Table of Contents
-
-### [1. Variable](#variable)
-
-
-
-## 1 Variable <a name="variable"></a>
+## 1 Variable
 
 in Shell, you can create a varibale with `VARIABLE_NAME=value`
 
@@ -18,6 +12,9 @@ if you want to assign command output to an varibale, wrap command with `$(comman
 ```shell
 VARIABLE_NAME=`command`
 ```
+
+notice, when use variable inside a quote, use double quote "", single quote will ignore variable.
+
 ### 1.1 export and environment variable
 
 if you want  a variable to be accessible globally in the mcahine, export it as a environment variable in `/etc/profile`
@@ -63,7 +60,7 @@ expr num1 + num2
 
 ```
 
-if you want to assign an expression to  a variable, use \`\` 
+if you want to assign an expression to  a variable, use \`\`
 
 ```shell
 A=3
@@ -93,4 +90,4 @@ then command
 else
 command
 fi
-``` 
+```
