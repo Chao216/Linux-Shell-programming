@@ -82,6 +82,8 @@ echo $C
 
 ## 2. Conditions
 
+### 2.1 if elif control
+
 ```shell
 if [ condition ]
 then command
@@ -103,4 +105,53 @@ fi
  then
  	echo "congratulations"
  fi
+```
+### 2.2 case control
+
+```Shell
+case  $variable-name  in
+             pattern1|pattern2|pattern3)       
+         command1
+                 ...
+                 ....
+                 commandN
+                 ;;
+             pattern4|pattern5|pattern6)
+         command1
+                 ...
+                 ....
+                 commandN
+                 ;;            
+             pattern7|pattern8|patternN)       
+         command1
+                 ...
+                 ....
+                 commandN
+                 ;;
+             *)              
+       esac
+```
+
+such as
+
+```Shell
+#!/bin/bash
+
+case $1 in
+	1)
+		echo "janurary"
+		;;
+	2)
+		echo "february"
+		;;
+	3)
+		echo "march"
+		;;
+	4)
+		echo "April"
+		;;
+	*)
+		echo "other month"
+		;;
+esac
 ```
