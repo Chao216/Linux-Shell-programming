@@ -106,9 +106,11 @@ fi
  	echo "congratulations"
  fi
 ```
+
 ### 2.2 case control
 
-```Shell
+
+```shell
 case  $variable-name  in
              pattern1|pattern2|pattern3)       
          command1
@@ -129,12 +131,11 @@ case  $variable-name  in
                  commandN
                  ;;
              *)              
-       esac
-```
+esac  
+```  
 
-such as
+```shell
 
-```Shell
 #!/bin/bash
 
 case $1 in
@@ -155,3 +156,7 @@ case $1 in
 		;;
 esac
 ```
+
+<hr />
+
+### for loop
