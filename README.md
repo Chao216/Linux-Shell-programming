@@ -164,7 +164,7 @@ esac
 ### 2.3 for loop
 
 ```Shell
-for $variable in  something
+for index in  something
 
 do
   //code to run
@@ -199,5 +199,19 @@ echo ========================================
 for l in "$@"
 do
 	echo $l
+done
+```
+
+or the  (i =1; i < 100; i ++) style loop
+
+```Shell
+#!/bin/bash
+
+sum=0
+
+for ((i=0; i <= $1; i++))
+do
+	sum=$(($sum + $i))
+	echo "sum is now @ $sum"
 done
 ```
