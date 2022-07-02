@@ -277,3 +277,37 @@ dirname /home/chao/Desktop/Linux-Shell-programming/position.sh
 ```
 
 will return  `/home/chao/Desktop/Linux-Shell-programming/`
+
+
+if you want to define a function
+
+```Shell
+function myFunc(){
+  //code to
+  return //something but optional
+}
+
+myFunc
+```
+
+note calling a function in shell don't need "()"
+
+
+```Shell
+#!/bin/bash
+
+read -p "enter the first nnumber" num1
+
+read -p "enter the second number" num2
+
+function myfunc(){
+	sum=$(($num1+$num2))
+	echo $sum
+	return $sum
+
+}
+
+myfunc
+
+echo $sum
+```
