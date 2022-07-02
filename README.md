@@ -256,3 +256,16 @@ read -t 10 -p "What is your age?  " AGE
 echo "So you are $AGE years old?"
 
 ```
+
+
+## 3. function
+
+### 3.1 builtin function
+
+`basename` will return the file name
+
+```Shell
+basename /home/chao/Desktop/Linux-Shell-programming/position.sh
+basename /home/chao/Desktop/Linux-Shell-programming/position.sh .sh
+```
+will respectively return  `postion.sh` and `psotion`, as directory path is trimmed.
