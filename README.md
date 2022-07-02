@@ -215,3 +215,18 @@ do
 	echo "sum is now @ $sum"
 done
 ```
+
+### 2.4 while loop
+
+```Shell
+#!/bin/bash
+
+i=$1
+
+while [ $i -ge 0 ]
+do
+	i=$(($i-1))
+echo $i
+done
+
+```
