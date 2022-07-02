@@ -318,3 +318,28 @@ if you want to display time
 ```Shell
 date +%y-%m-%d@%H:%M:%S
 ```
+
+### 3.2 array in Shell
+
+to create an array `VARIABLE=(el1 el2 el3 ...)`
+
+to access an element inside an array `${array[index]}`, index starting from 0
+
+to access to all elements in an array, use `${array[*]}` or `${array[@]}`
+
+to check the length of array `${#array[@]}`
+
+
+example array
+
+```Shell
+#!/bin/bash
+
+strangerThings=("Eleven" "Will" "Mike" "Dustin" "Lucas" "Steve" "Nancy" "Johnathon" "Joyce" "Hopper" "Max" "Billy" "Henry")
+
+echo "the second element is ${strangerThings[1]}"
+
+echo "we have ${strangerThings[@]} in the cast"
+
+echo "there are ${#strangerThings[*]} in the array"
+```
