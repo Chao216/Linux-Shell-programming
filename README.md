@@ -379,3 +379,14 @@ echo $will
 ```
 
 `echo ${will:+"man"}` will display man, while `echo $will` display boy, as value of `$will` is not changed, but temporarily replaced once.
+
+
+
+#### 3.3.3 check length of a string
+
+```Shell
+str="In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries."
+
+echo ${#str}
+```
+`echo ${#str}` display 188, ${#variable} display string length
