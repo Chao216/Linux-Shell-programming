@@ -311,3 +311,10 @@ myfunc
 
 echo $sum
 ```
+
+
+if you want to display time
+
+```Shell
+date +%y-%m-%d@%H:%M:%S
+```
