@@ -230,3 +230,29 @@ echo $i
 done
 
 ```
+
+### 2.5 The read prompt
+
+read is kinda like prompt in javascript, -t for timeout, -p for message
+
+```Shell
+read -p "the message you want to display" VARIABLE1
+
+echo $VARIABLE1
+
+read -t 10 -p "message to display" VARIABLE2
+
+echo $VARIABLE2
+```
+
+```Shell
+#!/bin/bash
+
+read -p "please enter the value for name  " NAME
+
+echo "you name is $NAME"
+
+read -t 10 -p "What is your age?  " AGE
+echo "So you are $AGE years old?"
+
+```
