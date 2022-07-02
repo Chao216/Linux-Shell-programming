@@ -378,4 +378,4 @@ echo ${will:+"man"}
 echo $will
 ```
 
-`echo ${will:+"man"}` will display man, while `echo $will` display boy, as value of `$will` is not changed.
+`echo ${will:+"man"}` will display man, while `echo $will` display boy, as value of `$will` is not changed, but temporarily replaced once.
