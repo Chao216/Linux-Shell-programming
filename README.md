@@ -365,7 +365,7 @@ echo ${mike:="boy"}
 echo $mike
 ```
 
-"boy" was  expanded into `mike`, but `mike` now has a value of `boy`
+"boy" was  expanded, and assigned to `mike`, therefore, `mike` now has a value of `boy`
 
 #### 3.3.2 non-empty parameter
 
