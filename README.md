@@ -343,3 +343,39 @@ echo "we have ${strangerThings[@]} in the cast"
 
 echo "there are ${#strangerThings[*]} in the array"
 ```
+
+### 3.3 parameter expansion
+
+#### 3.3.1 empty parameter
+
+```shell
+mike=
+
+echo ${mike:-"boy"}
+
+echo $mike
+```
+"boy" was temporarily expanded into `mike`, but `mike` is still empty
+
+```shell
+mike=
+
+echo ${mike:="boy"}
+
+echo $mike
+```
+
+"boy" was  expanded into `mike`, but `mike` now has a value of `boy`
+
+#### 3.3.2 non-empty parameter
+
+```shell
+
+will="boy"
+
+echo ${will:+"man"}
+
+echo $will
+```
+
+`echo ${will:+"man"}` will display man, while `echo $will` display boy, as value of `$will` is not changed.
