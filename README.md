@@ -269,3 +269,11 @@ basename /home/chao/Desktop/Linux-Shell-programming/position.sh
 basename /home/chao/Desktop/Linux-Shell-programming/position.sh .sh
 ```
 will respectively return  `postion.sh` and `psotion`, as directory path is trimmed.
+
+`dirname` will do the opposite
+
+```Shell
+dirname /home/chao/Desktop/Linux-Shell-programming/position.sh
+```
+
+will return  `/home/chao/Desktop/Linux-Shell-programming/`
